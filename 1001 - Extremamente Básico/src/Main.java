@@ -4,18 +4,18 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         
-        // declaração de variáveis
+        // variable declaration
 
         int numbers, sum = 0, i;
 
-        // entrada de dados e processamento
+        // data input and processing
 
         for(i = 0; i < 2; i++){
             numbers = scanner.nextInt();
             sum += numbers;
         }
 
-        // saída de dados
+        // data output
 
         System.out.println("X = " + sum);
         
