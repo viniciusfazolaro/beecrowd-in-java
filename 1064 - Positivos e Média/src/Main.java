@@ -1,11 +1,3 @@
-/*Faça um programa que leia 6 valores. Estes valores serão somente negativos ou positivos (desconsidere os valores nulos). A seguir, mostre a quantidade de valores positivos digitados.
-
-Entrada
-Seis valores, negativos e/ou positivos.
-
-Saída
-Imprima uma mensagem dizendo quantos valores positivos foram lidos. */
-
 import java.util.Scanner;
 
 public class Main {
@@ -14,8 +6,8 @@ public class Main {
 
         // variables declaration
 
-        int i, positives = 0, ;
-        double value;
+        int i, positives = 0;
+        double value, total = 0, avg;
 
         // input and processing
 
@@ -23,11 +15,16 @@ public class Main {
             value = scanner.nextDouble();
             if(value > 0){
                 positives++;
+                total += value;
             }
         }
+
+        avg = total / positives;
 
         // output
 
         System.out.println(positives + " valores positivos");
+
+        System.out.printf("%.1f\n", avg);
     }
 }
